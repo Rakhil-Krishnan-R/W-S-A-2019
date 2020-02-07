@@ -1,0 +1,55 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+.font-vibes {
+    font-family: 'Great Vibes';
+}
+
+.font-Kaushan {
+    font-family: 'Kaushan Script';
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.navbar .affix {
+    background: black;
+    position: fixed;
+    top: 2px;
+}
+
+
+/* color */
+
+.text-gold {
+    color: chocolate;
+}
+
+
+/* ----------- about section -------------- */
+
+
+/* ----------- menu section ----------- */
+
+
+/* .menu-footer {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 0px auto;
+    position: relative;
+    z-index: 0;
+    transform: rotate(45deg);
+    border-radius: 10%;
+    top: 50px;
+} */
+
+#contact i {
+    font-size: 10px!important;
+}

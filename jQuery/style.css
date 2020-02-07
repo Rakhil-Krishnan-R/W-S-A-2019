@@ -1,0 +1,5 @@
+.box-animation {
+    opacity: .1;
+    z-index: 5;
+    animation: boxAni 5s 1s;
+}

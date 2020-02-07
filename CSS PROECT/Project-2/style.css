@@ -1,0 +1,447 @@
+/* ---------------- common style --------------- */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* nav-bar */
+.nav{
+    display: block;
+}
+.list-item{
+    list-style: none;
+    display: inline-block;
+    margin: 5px 10px;
+}
+.list-link{
+    text-decoration: none;
+    color: black;
+}
+
+/* text transformation styles */
+.upper{
+    text-transform: uppercase;
+}
+.cap{
+    text-transform: capitalize;
+}
+.bold{
+    font-weight: bold;
+}
+
+/* display */
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.grid{
+    display: grid;
+    grid-gap: 20px;
+}
+.inline-block{
+    display: inline-block;
+}
+
+/* text color */
+.color-gray{
+    color: gray;
+}
+.color-light{
+    color: white;
+}
+.color-orange{
+    color: orange;
+}
+
+/* background color */
+.bg-gray{
+    background: rgb(158, 156, 156);
+}
+.bg-orange{
+    background: orange;
+}
+.bg-light{
+    background: white;
+}
+
+/* width varients */
+.width100{
+    width: 100%;
+}
+.width-50{
+    width: 50%;
+}
+.width-49{
+    width: 49.5%;
+}
+.width-25{
+    width: 25%;
+}
+.width-10{
+    width: 10%;
+}
+
+
+/* height */
+.height-35{
+    height: 35px;
+}
+
+/* text-align varients */
+.align-center{
+    text-align: center;
+}
+.align-justify{
+    text-align: justify;
+}
+.align-right{
+    text-align: right;
+}
+/* font size */
+.font-25{
+    font-size: 25px;
+}
+.font-20{
+    font-size: 20px;
+}
+.font-50{
+    font-size: 50px;
+}
+.font-65{
+    font-size: 65px;
+}
+
+/* margin */
+.margin-t-15{
+    margin-top: 15px;
+}
+.margin-t-30{
+    margin-top: 30px;
+}
+.margin-b-30{
+    margin-bottom: 30px;
+}
+.margin-l-10{
+    margin-left: 10px;
+}
+.margin-l-auto{
+    margin-left: 25%;
+}
+
+/* padding */
+.padding{
+    padding: 40px 70px 60px 70px;
+}
+.padding-1{
+    padding: 20;
+}
+.padding-auto{
+    padding: 1% 2.5%;
+}
+.padding-t-15{
+    padding-top: 5px;
+}
+.padding-y{
+    padding: 20px 0px;   
+}
+.padding-x{
+    padding: 20px 70px;   
+}
+/* icon */
+.icon{
+    font-size: 30px;
+}
+
+.line-height{
+    line-height: 25px;
+}
+
+/* header */
+.header{
+    text-align: center;
+    padding: 20px 20px 30px 2px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+/* ------------ sticky-nav -------------- */
+#sticky-nav .responsive-bar{
+    display: none;
+}
+/* ------------ home ------------- */
+#sticky-nav{
+    position: sticky;
+    top: 1px;
+    background: rebeccapurple;
+    z-index: 5;
+}
+#home{
+    background: rebeccapurple;
+}
+#home .smart-phone-store{
+    width: 55%;
+    grid-template-columns: repeat(2,1fr);
+}
+#home .store{
+    grid-template-columns: 10% 80%;
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 10px;
+}
+#home .registration-form button{
+    margin-left: 100px;
+}
+#home .registration-form p{
+    margin-left: 120px;
+}
+#home .crypto-currency-img{
+    width: 30px;
+    height: 30px;
+}
+
+
+/* -------------- about ------------- */
+#about .about-us-body{
+    grid-template-columns: repeat(2,1fr);
+}
+#about  .buy-icon{
+    font-size: 30px;
+    background: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 5px ;
+    box-sizing: border-box;
+    color: orange;
+}
+#about .steps-to-buy{
+    grid-template-columns: repeat(3,1fr);
+}
+#about .steps-to-buy>div:first-child{
+    grid-template-columns: 10% 70%;
+}
+#about .steps-to-buy>div{
+    grid-template-columns: 10% 10% 70%;
+}
+
+/* ----------- feature body ------------ */
+
+#features .why-choose-us{
+    grid-template-columns: repeat(4,1fr);
+}
+#features .how-to-buy{ 
+    margin-top: 40px;
+    grid-template-columns: repeat(2,1fr);
+}
+#features .font-35{
+    font-size: 35px;
+}
+
+/* ------------ dashbord ------------- */
+
+#dashbord .dashbord-body{
+    grid-template-columns: repeat(2,1fr);
+}
+#dashbord .dashbord-content{
+    flex-direction: column;
+}
+#dashbord img{
+    width: 100%;
+}
+#dashbord .icon-dashbord{
+    background: orange;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 12px ;
+    box-sizing: border-box;
+    color: black;
+}
+
+/* ------------ buy now ------------ */
+#buy-now{
+    margin-top:40px ;
+}
+/* ---------- faq ------------ */
+
+#faq .border-orange{
+    border: 3px solid orange;
+}
+#faq .show{
+    font-size: 15px;
+    background: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 7px ;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* --------- contact us ---------- */
+.border-bottom-only{
+    border: 1px solid transparent;
+    border-bottom: 1px solid orange;
+}
+#contact-us input{
+    width: 302px;
+}
+
+/* ------------------------------------------------------------------------------- responsive design ----------------------------------------------------------------------------------------- */
+/* -------------- tablet's -------------- */
+@media only screen and (max-width: 768px){
+    /* common */
+    .width-10{
+        width: 20%;
+    }
+    /* nav bar */
+    #sticky-nav{
+        position: relative;
+        padding: 10px 15px;
+    }
+    #sticky-nav .responsive-bar{
+        display: block;
+    }
+    #sticky-nav .nav{
+        display: none;
+    }
+   
+
+    /* home */
+    #home .home-body{
+        flex-direction: column;
+    }
+    #home .home-text{
+        width: 100%;
+    }
+    #home .registration-form{
+        margin-top: 30px;
+    }
+    #home .smart-phone-store{
+        width: 100%;
+    }
+    #home .margin-l-auto{
+        position: relative;
+        left: 50px;
+    }
+
+    /* about us */
+    #about .step-to-buy{
+        flex-direction: column;
+    }
+    #about .step-to-buy .flex{
+        flex-direction: column;
+    }
+
+    /* feature */
+    #features .why-choose-us{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #features .how-to-buy{
+        grid-template-columns: 100%;
+    }
+}
+
+/* ----------------- mobile --------------- */
+@media only screen and (max-width: 425px){
+    /* common */
+    .padding{
+        padding: 30px 40px 50px 40px;
+    }
+    .width-50{
+        width: 100%;
+    }
+    .width-25{
+        width: 50%;
+    }
+    .width-10{
+        width: 25%;
+    }
+    .margin-l-auto{
+        margin: 0%;
+    }
+  
+    body{
+        /* width: 150%; */
+    }
+    /* home */
+    #home{
+        border: transparent;
+    }
+    #home .home-footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 70px;
+        border: transparent;
+    }
+    #home .home-footer img{
+        width: 45px;
+        height: 45px;
+    }
+    #home .registration-form button{
+        margin-top: 20px;
+        margin-left: 14px;
+        width: 50%;
+    }
+
+    /* about */
+    #about .about-us-body{
+        grid-template-columns: 100%;
+    }
+    #about .about-us-body div:first-child > p{
+        font-size: 17px;
+    }
+    #about .steps-to-buy{
+        margin-left: 25%;
+        grid-template-columns: 100%;
+    }
+    #about .steps-to-buy >div{
+        grid-template-columns: 100%;
+    }
+    #about .buy-icon{
+        transform: rotate(90deg);
+    }
+
+    /* dashbore */
+    #dashbord .dashbord-body{
+        grid-template-columns: 100%;
+    }
+    /* features */
+    #features .why-choose-us{
+        grid-template-columns: 100%;
+    }
+
+    #testimonial .testimonial-body{
+        flex-direction: column;
+
+    }
+    #testimonial .width-50{
+        width: 100%;
+    }
+    #testimonial .testimonial-body .owner {
+        margin-top: 40px;
+        margin-left: 35%;
+    }
+    .carosal{
+        margin-left: 20%;
+    }
+
+    /* faq */
+    #faq .market-says{
+        margin-top: 0px;
+    }
+
+    /* contact */
+    #contact-us .flex{
+        text-align: center;
+        flex-direction: column;
+    }
+    #contact-us .copy-write{
+        text-align: center;
+        padding-top: 50px;
+    }
+}

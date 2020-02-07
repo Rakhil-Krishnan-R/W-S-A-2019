@@ -1,0 +1,499 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS PROJECT NO:2 </title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/f8aa197cbc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="parent">
+
+        <!-- sticky navbar -->
+        <header id="sticky-nav" class="flex ">
+            <div>
+                <h1 class="upper font-50"><i class="fas fa-copyright"></i> cc-ico</h1>
+            </div>
+            <nav>
+                <ul class="nav margin-t-15">
+                    <li class="list-item"><a href="#home" class="list-link upper">home</a></li>
+                    <li class="list-item"><a href="#about" class="list-link upper">about</a></li>
+                    <li class="list-item"><a href="#features" class="list-link upper">features</a></li>
+                    <li class="list-item"><a href="#dashbord" class="list-link upper">dashbord</a></li>
+                    <li class="list-item"><a href="#buy-now" class="list-link upper">buy now</a></li>
+                    <li class="list-item"><a href="#testimonial" class="list-link upper">testimonial</a></li>
+                    <li class="list-item"><a href="#faq" class="list-link upper">faq</a></li>
+                    <li class="list-item"><a href="#contact-us" class="list-link upper">contact us</a></li>
+                </ul>
+            </nav>
+            <span class="font-25 responsive-bar">&#9776;</span>
+        </header>
+
+        <!-- home section -->
+        <section id="home" class="section">
+            <div class="home-body flex  padding">
+                <div class="home-text color-light width-50">
+                    <div>
+                        <h3 class="upper font-20 margin-t-15">fastest & easiest way to</h3>
+                        <h1 class="cap font-50 margin-t-15">buy, sell, trade</h1>
+                        <h3 class="upper margin-t-15">cryptocurrencies</h3>
+                    </div>
+                    <div class="margin-t-30">
+                        <p class="line-height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, numquam. Vel quas, repudiandae voluptatem tempora qui sint dicta deserunt voluptates sapiente. Deleniti dolorem ab odit a, sapiente cumque dolorum laboriosam
+                            earum alias exercitationem aut dolores, beatae rem ad asperiores totam porro, ipsam adipisci officiis praesentium aliquam veniam facere. Non, ducimus?</p>
+                    </div>
+                    <div class="smart-phone-store grid color-light margin-t-30">
+                        <div class="app-store store grid ">
+                            <div><i class="fab fa-apple icon"></i></div>
+                            <div class="cap">
+                                <h5>download on the</h5>
+                                <h1>app store</h1>
+                            </div>
+                        </div>
+                        <div class="google-store store grid">
+                            <div><i class="fab fa-android icon"></i></div>
+                            <div class="cap">
+                                <h5>download on the</h5>
+                                <h1>google play</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="registration-form  ">
+                    <h2 class="align-center cap color-light ">free registrations</h2>
+                    <div class="form  bg-gray padding-1 margin-t-15">
+                        <input type="text" class="upper height-35 width-49" placeholder="first name">
+                        <input type="text" class="upper height-35 width-49" placeholder="last name"><br>
+                        <input type="email" class="upper height-35 width100 margin-t-15" placeholder="email"><br>
+                        <input type="phone" class="upper height-35 width100 margin-t-15" placeholder="phone"><br>
+                        <select name="country" id="country" class="width100 margin-t-15 height-35">
+                            <option value="india" class="upper" selected>INDIA</option>
+                        </select>
+                        <button class="bg-orange color-light  margin-l-auto upper margin-t-15 width-50 height-35 bg-orange">open
+                            account</button>
+                        <p class="cap margin-t-15 align-center"><span class="color-gray">accept </span>
+                            <a href="" class="link">
+                                <u>terms conditions</u></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="home-footer flex upper align-center margin-t-30 bg-light  padding-x">
+                <div>
+                    <img src="./crypto-currency images/bitcoin.png" class="crypto-currency-img" alt=""><br>
+                    <h2 class="margin-t-15">8000.50usd</h2>
+                </div>
+                <div>
+                    <img src="./crypto-currency images/Monero.png" class="crypto-currency-img" alt=""><br>
+                    <h2 class="margin-t-15">8000.50usd</h2>
+                </div>
+                <div>
+                    <img src="./crypto-currency images/Ethereum.png" class="crypto-currency-img img-3" alt=""><br>
+                    <h2 class="margin-t-15">8000.50usd</h2>
+                </div>
+                <div>
+                    <img src="./crypto-currency images/litecoin.png" class="crypto-currency-img" alt=""><br>
+                    <h2 class="margin-t-15">8000.50usd</h2>
+                </div>
+                <div>
+                    <img src="./crypto-currency images/Bitcoin Cash.png" class="crypto-currency-img" alt=""><br>
+                    <h2 class="margin-t-15">8000.50usd</h2>
+                </div>
+                <div>
+                    <img src="./crypto-currency images/Ripple.jpg" class="crypto-currency-img" alt=""><br>
+                    <h2 class="margin-t-15">8000.50usd</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section id="about" class="section padding">
+            <div>
+                <div class="about-header header">
+                    <h1>About us</h1>
+                </div>
+                <div class="about-us-body body grid align-justify margin-t-30">
+                    <div class="color-gray align-justify div1">
+                        <p class="line-height">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi at eveniet temporibus voluptatibus aperiam amet dicta aliquid, possimus voluptas maiores aspernatur, beatae iusto! Impedit mollitia aspernatur minima vero enim debitis
+                            animi maxime non inventore reprehenderit recusandae architecto consequuntur quas assumenda distinctio natus, iste quasi! Error magnam quisquam impedit debitis eos ad fugiat harum, qui provident nam quis! Qui, corporis similique?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptate numquam eveniet vero, eos reiciendis.</p>
+                    </div>
+                    <div>
+                        <h2 class="upper color-gray ">our mission</h2>
+                        <p class="font-20 margin-t-15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quae beatae provident illo! Aperiam ex illo consequuntur recusandae, maxime facere! Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="header">
+                        <h1>Easy to buy crypto currency</h1>
+                    </div>
+                    <div class="steps-to-buy grid font-20 margin-t-30">
+                        <div class="grid grid-1">
+                            <div>
+                                <h1 class="bold font-50">1</h1>
+                            </div>
+                            <div>
+                                <p><a href="" class="color-orange"><u>Deposit funds</u></a>in the<br>one hours.</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-common">
+                            <div><i class="fas fa-arrow-right buy-icon"></i></div>
+                            <div>
+                                <h1 class="bold font-50">2</h1>
+                            </div>
+                            <div>
+                                <p>Start<a href="" class="color-orange cap"><u>buy & sell</u></a>any<br>Cryptocurrency.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid grid-common">
+                            <div><i class="fas fa-arrow-right buy-icon"></i></div>
+                            <div>
+                                <h1 class="bold font-50">3</h1>
+                            </div>
+                            <div>
+                                <p><a href="" class="color-orange"><u>Register</u></a>your<br>trading account.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- feature section -->
+        <section id="features" class="section">
+            <div class="why-choose-us-container bg-gray padding">
+                <header class="feature-header header">
+                    <h1>Why Choose Us?</h1>
+                </header>
+                <div class="feature-body">
+                    <div class="why-choose-us grid align-center">
+                        <div>
+                            <div>
+                                <h2 class="cap">fair</h2>
+                            </div>
+                            <div class="margin-t-15">
+                                <i class="font-65 color-orange fas fa-calculator"></i>
+                            </div>
+                            <div class="margin-t-15">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati temporibus suscipit maiores ratione dolores </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h2 class="cap">fast</h2>
+                            </div>
+                            <div class="margin-t-15">
+                                <i class=" font-65 color-orange fas fa-rocket"></i>
+                            </div>
+                            <div class="margin-t-15">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati temporibus suscipit maiores ratione</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h2 class="cap">secure</h2>
+                            </div>
+                            <div class="margin-t-15">
+                                <i class=" font-65 color-orange fas fa-lock"></i>
+                            </div>
+                            <div class="margin-t-15">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati temporibus suscipit maiores ratione dolores asperio</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h2 class="cap">multicoin</h2>
+                            </div>
+                            <div class="margin-t-15">
+                                <i class=" font-65 color-orange fas fa-coins"></i>
+                            </div>
+                            <div class="margin-t-15">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati temporibus suscipit maiores ratione dolores asperior</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h2 class="cap">online payment</h2>
+                            </div>
+                            <div class="margin-t-15">
+                                <i class=" font-65 color-orange fas fa-money-check"></i>
+                            </div>
+                            <div class="margin-t-15">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati temporibus suscipit maiores ratione dolo</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h2 class="cap">legal</h2>
+                            </div>
+                            <div class="margin-t-15">
+                                <i class=" font-65 color-orange fas fa-file-contract"></i>
+                            </div>
+                            <div class="margin-t-15">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati temporibus suscipit maiores ratione dolor</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h2 class="cap">commisions</h2>
+                            </div>
+                            <div class="margin-t-15">
+                                <i class=" font-65 color-orange fas fa-percentage"></i>
+
+                            </div>
+                            <div class="margin-t-15">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati temporibus suscipit maiores ratione dolores asperio</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h2 class="cap">withdraw</h2>
+                            </div>
+                            <div class="margin-t-15">
+                                <i class=" font-65 color-orange fas fa-money-check-alt"></i>
+                            </div>
+                            <div class="margin-t-15">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati temporibus suscipit maiores ratione dolores asperi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="how-to-buy grid padding margin-b-30">
+                <div class="btc-img">
+                    <img src="./images/buy-bitcoin-img.PNG" class="width100" alt="">
+                </div>
+                <div>
+                    <h1 class="font-35">How to buy sell <br> Crypto Currency?</h1>
+                    <p class="margin-t-30 line-height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam praesentium similique culpa quidem libero tempore ex possimus, nostrum expedita sit vitae, enim ducimus dignissimos quam omnis repellat veniam modi itaque. Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Sed, quidem alias temporibus fugit adipisci id quaerat earum doloremque facilis iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quasi!
+                    </p>
+                    <p class="margin-t-30 line-height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi doloremque distinctio in ullam? Quas recusandae accusamus ducimus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, mollitia! Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Natus, quae.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- dashbord section -->
+        <section id="dashbord" class="section padding bg-gray">
+            <div class="header">
+                <h1>create your portfolio</h1>
+            </div>
+            <div class="dashbord-body grid">
+                <div class="dashbord-content flex">
+                    <div>
+                        <div> <i class="fas fa-suitcase-rolling  font-25 icon-dashbord"></i>
+                            <span class="margin-l-10 font-25 cap">manage portfolio</span>
+                        </div>
+                        <div>
+                            <p class="line-height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, at. Lorem ipsum dolor sit amet consectetur adipisiciat beatae ex laborum impedit officia
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div> <i class="fas fa-satellite-dish  font-25 icon-dashbord"></i>
+                            <span class="margin-l-10 font-25  cap">vault protections</span>
+                        </div>
+                        <div>
+                            <p class="line-height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, at. Lorem, ipsum dolor sit amet consectetur adipis magnam numquam ducimus. Enim
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div> <i class="fas fa-mobile font-25 icon-dashbord"></i>
+                            <span class="margin-l-10 font-25  cap">mobile app</span>
+                        </div>
+                        <div>
+                            <p class="line-height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, at. Lorem ipsum dolor sit amet consectetur adipiribus quos eum possimus minus, non maiores
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashbord-img">
+                    <img src="./images/dashbord-img.PNG" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- buy now section -->
+        <section id="buy-now" class="section align-center margin-t-30 pa">
+            <header class="buy-header header">
+                <h1>buy cryptocurrency</h1>
+            </header>
+            <div class="buy-body">
+                <div>
+                    <p class="bold font-20">Buy and sell coins at the CC-ICO <br>without additonal fees</p>
+                    <p class="color-gray margin-t-30">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, autem.
+                    </p>
+                </div>
+                <div>
+                    <div class="bg-gray align-center upper margin-l-auto margin-t-30  width-50">
+                        <div class="padding">
+                            <div class="bg-light inline-block  padding-auto ">
+                                <h2>1</h2>
+                            </div>
+                            <div class="bg-gray inline-block padding-auto">
+                                <h2>btc =</h2>
+                            </div>
+                            <div class="bg-light inline-block padding-auto">
+                                <h2>84734.09</h2>
+                            </div>
+                            <div class="bg-light inline-block padding-auto">
+                                <h2>usd</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margin-t-30"><button class="bg-dark color-light cap width-10 height-35">buy now</button>
+                    </div>
+                </div>
+                <div class="margin-t-30">
+                    <h1>Trade on the go download the app</h1>
+                    <input type="text" placeholder="enter your mobile number" class="cap margin-t-15 height-35 width-25">
+                    <button class="bg-dark color-light cap height-35 width-10">get started</button></input>
+                </div>
+            </div>
+            <footer class="bg-orange color-light flex cap padding margin-t-30">
+                <div>
+                    <h1>56404</h1>
+                    <h3>$ transation per day</h3>
+                </div>
+                <div>
+                    <h1>10</h1>
+                    <h3>year of experience</h3>
+                </div>
+                <div>
+                    <h1>239393</h1>
+                    <h3>registerd users</h3>
+                </div>
+                <div>
+                    <h1>24</h1>
+                    <h3>award winning</h3>
+                </div>
+            </footer>
+        </section>
+
+        <!-- testimonial section -->
+        <section id="testimonial" class="section padding">
+            <header class="testmonial-header header">
+                <h1>testimolial</h1>
+            </header>
+            <div class="testimonial-body flex margin-t-30 ">
+                <div class="width-50">
+                    <div>
+                        <p class="bold font-20 line-height"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Harum, eius? Placeat
+                                vitae praesentium exercitationem perspiciatis! Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Adipisci, cupiditate!</i></p>
+                    </div>
+                </div>
+                <div class="align-center width-25 owner">
+                    <i></i>
+                    <h2 class="cap">harshad patel</h2>
+                    <h5 class="color-gray cap">bitcoin buyer</h5>
+                </div>
+            </div>
+            <div class="padding-x margin-t-30 carosal">
+                <i>1</i>
+                <i class="margin-l-10">2</i>
+                <i class="margin-l-10">3</i>
+            </div>
+        </section>
+
+        <!-- faq section -->
+        <section id="faq" class="section bg-gray padding">
+            <header class="faq-header header">
+                <h1>frequently asked questions</h1>
+            </header>
+            <div class="faq-body margin-t-30">
+                <div class="border-orange width-50 padding-1 margin-l-auto">
+                    <div class="flex">
+                        <h1>What is ICO?</h1>
+                        <i class="fas fa-arrow-up show-less show"></i>
+                    </div>
+                    <div class="margin-t-15">
+                        <p class="line-height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur fugit aliquam culpa sint ab accusamus architecto adipisci illum odit! Quas perspiciatis culpa consequatur, dolorum iusto sequi adipisci Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Rerum, cum? facilis earum! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="market-says bg-orange margin-t-15 width-50 margin-l-auto padding-1">
+                    <div class="flex">
+                        <h1>What market says?</h1>
+                        <i class="fas fa-arrow-down show-more show"></i>
+                    </div>
+                </div>
+                <div class="crypto-currency bg-orange margin-t-15 width-50 margin-l-auto padding-1">
+                    <div class="flex">
+                        <h1>What is Crypto currency?</h1>
+                        <i class="fas fa-arrow-down show-more show"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact us section -->
+        <section id="contact-us" class="section padding">
+            <header class="contact-us-header header">
+                <h1>contact us</h1>
+            </header>
+            <div class="contact-us-body">
+                <div class="align-center">
+                    <input type="text" class="cap border-bottom-only height-35 width-25 margin-t-15" placeholder="your name"><br>
+                    <input type="text" class="cap border-bottom-only height-35 width-25 margin-t-15" placeholder="your email"><br>
+                    <textarea name="text" id="text" cols="40" rows="5" class="cap border-bottom-only margin-t-15" placeholder="write message here"></textarea><br>
+                    <button class="bg-dark color-light cap width-10 height-35 margin-t-15">submit</button>
+                </div>
+                <div class="contact-footer flex margin-t-30">
+                    <div>
+                        <div class="margin-l-10 font-25">
+                            <i class="fab fa-facebook margin-l-10"></i>
+                            <i class="fab fa-google-plus margin-l-10"></i>
+                            <i class="fab fa-twitter margin-l-10"></i>
+                            <i class="fab fa-linkedin margin-l-10"></i>
+                            <i class="fab fa-instagram margin-l-10"></i>
+                        </div>
+                        <div class="margin-t-15">
+                            <nav>
+                                <ul class="nav">
+                                    <li class="list-item"><a href="#home" class="list-link margin-l-10 upper">home</a>
+                                    </li>
+                                    <li class="list-item"><a href="#about" class="list-link margin-l-10 upper">about</a>
+                                    </li>
+                                    <li class="list-item"><a href="#features" class="list-link margin-l-10 upper">features</a></li>
+                                    <li class="list-item"><a href="#dashbord" class="list-link margin-l-10 upper">dashbord</a></li>
+                                    <li class="list-item"><a href="#buy-now" class="list-link margin-l-10 upper">buy
+                                            now</a></li>
+                                    <li class="list-item"><a href="#testimonial" class="list-link margin-l-10 upper">testimonial</a>
+                                    </li>
+                                    <li class="list-item"><a href="#faq" class="list-link margin-l-10 upper">faq</a>
+                                    </li>
+                                    <li class="list-item"><a href="#contact-us" class="list-link margin-l-10 upper">contact
+                                            us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="margin-l-10 margin-t-15">
+                            <p class="margin-l-10"><span> support@webstitename.com
+                                </span>&nbsp;&nbsp;<span>+919191919191</span></p>
+                        </div>
+                    </div>
+                    <div class="copy-write align-right">
+                        <div>
+                            <h1 class="upper font-25"><i class="fas fa-copyright"></i> cc-ico </h1>
+                        </div>
+                        <div class=" margin-t-15 line-height">&copy; 2018 CO-ICO All Rights Reserved<br>Design by Awaiken
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

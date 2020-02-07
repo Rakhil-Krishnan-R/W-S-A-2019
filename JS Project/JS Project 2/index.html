@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+    <div class="container text-center " id="container">
+        <div class="row ml-5">
+            <div class="col-10">
+                <img src="./images required/penguin_title.png" alt="">
+
+            </div>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-4 position-relative h-50">
+                        <img src="./images required/mound_hover_cloud.png" onmouseover="dispQuest(this.id)" onmouseout="dispCloud(this.id)" id="img1" onclick="dispImg(this.id)" class="" alt="">
+                        <img src="" alt="" class="imgContainer ml-5 pl-3" id="img1Container">
+                    </div>
+                    <div class="col-4 position-relative h-50">
+                        <img src="./images required/mound_hover_cloud.png" onmouseover="dispQuest(this.id)" onmouseout="dispCloud(this.id)" id="img2" onclick="dispImg(this.id)" class="" alt="">
+                        <img src="" alt="" class="imgContainer ml-5 pl-3" id="img2Container">
+                    </div>
+                    <div class="col-4 position-relative h-50">
+                        <img src="./images required/mound_hover_cloud.png" onmouseover="dispQuest(this.id)" onmouseout="dispCloud(this.id)" id="img3" onclick="dispImg(this.id)" class="" alt="">
+                        <img src="" alt="" class="imgContainer ml-5 pl-3" id="img3Container">
+                    </div>
+                    <div class="col-4 position-relative h-50">
+                        <img src="./images required/mound_hover_cloud.png" onmouseover="dispQuest(this.id)" onmouseout="dispCloud(this.id)" id="img4" onclick="dispImg(this.id)" class="" alt="">
+                        <img src="" alt="" class="imgContainer ml-5 pl-3" id="img4Container">
+                    </div>
+                    <div class="col-4 position-relative h-50">
+                        <img src="./images required/mound_hover_cloud.png" onmouseover="dispQuest(this.id)" onmouseout="dispCloud(this.id)" id="img5" onclick="dispImg(this.id)" class="" alt="">
+                        <img src="" alt="" class="imgContainer ml-5 pl-3" id="img5Container">
+                    </div>
+                    <div class="col-4 position-relative h-50">
+                        <img src="./images required/mound_hover_cloud.png" onmouseover="dispQuest(this.id)" onmouseout="dispCloud(this.id)" id="img6" onclick="dispImg(this.id)" class="" alt="">
+                        <img src="" alt="" class="imgContainer ml-5 pl-3" id="img6Container">
+                    </div>
+                    <div class="col-4 position-relative h-50">
+                        <img src="./images required/mound_hover_cloud.png" onmouseover="dispQuest(this.id)" onmouseout="dispCloud(this.id)" id="img7" onclick="dispImg(this.id)" class="" alt="">
+                        <img src="" alt="" class="imgContainer ml-5 pl-3" id="img7Container">
+                    </div>
+                    <div class="col-4 position-relative h-50">
+                        <img src="./images required/mound_hover_cloud.png" onmouseover="dispQuest(this.id)" onmouseout="dispCloud(this.id)" id="img8" onclick="dispImg(this.id)" class="" alt="">
+                        <img src="" alt="" class="imgContainer ml-5 pl-3" id="img8Container">
+                    </div>
+                    <div class="col-4 position-relative h-50">
+                        <img src="./images required/mound_hover_cloud.png" onmouseover="dispQuest(this.id)" onmouseout="dispCloud(this.id)" id="img9" onclick="dispImg(this.id)" class="" alt="">
+                        <img src="" alt="" class="imgContainer ml-5 pl-3" id="img9Container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function dispQuest(imgId) {
+            document.getElementById(imgId).src = "./images required/mound_hover.png"
+        }
+
+        function dispCloud(imgId) {
+            document.getElementById(imgId).src = "./images required/mound_hover_cloud.png"
+        }
+        var score = 0;
+
+        function dispImg(imgId) {
+            reg = /yeti/;
+            if (reg.test(document.getElementById(imgId + "Container").src)) {
+                localStorage.setItem('yeti', score);
+                window.location.href = "result.html"
+            } else {
+                score++;
+
+                if (score == 8) {
+                    window.location.href = "winner.html"
+                } else {
+                    document.getElementById(imgId + "Container").style.display = "block"
+                    document.getElementById(imgId).style.display = "none"
+                }
+            }
+        }
+
+        function randomNum() {
+            var rand = (parseInt(Math.random() * 9));
+            return rand;
+        }
+        imgArr = ["./images required/penguin_1.png", "./images required/penguin_2.png", "./images required/penguin_3.png", "./images required/penguin_4.png", "./images required/penguin_5.png", "./images required/penguin_6.png", "./images required/penguin_7.png", "./images required/penguin_8.png", "./images required/yeti.png"]
+
+        function uniqueRandomNum() {
+            a = [];
+            a[0] = randomNum();
+            var imgClassArr = document.getElementsByClassName('imgContainer');
+            var flag = 1;
+            var ran = 0
+            for (let i = 0; i < 9; i++) {
+                while (flag == 1) {
+                    ran = randomNum();
+                    for (let j = i; j >= 0; j--) {
+                        if (a[j] == ran) {
+                            flag = 1;
+                            break;
+                        } else {
+                            flag = 0;
+                        }
+                    }
+                }
+                a[i] = ran;
+                flag = 1;
+            }
+            for (let i = 0; i < imgClassArr.length; i++) {
+                document.getElementById(imgClassArr[i].id).src = imgArr[a[i]];
+                imgClassArr[i].style.display = "none";
+            }
+        }
+        uniqueRandomNum();
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

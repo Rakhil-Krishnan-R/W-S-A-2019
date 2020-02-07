@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Project 1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js.js"></script>
+
+</head>
+
+<!-- display table onload -->
+
+<body onload="loadTable()">
+
+    <!-- row to contain all the form element -->
+    <div class="row shadow px-lg-5 py-2">
+
+        <!-- to do form -->
+        <div class="col-12 text-uppercase text-center p-0 m-0">
+            <h3 class="text-shadow">to do app</h3>
+        </div>
+        <div class="col-lg-4 ">
+            <div class="col-12 shadow p-2 m-lg-4 mt-sm-5 text-uppercase text-center text-shadow">to do form</div>
+            <div class="col-12 shadow p-5 m-lg-4 " style="font-size: 12px;">
+                <form action="">
+                    <div class="form-group">
+                        <label for="itemName">Item Name</label>
+                        <input type="text" name="itemName" id="itemName" class="form-control " placeholder="" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select class="custom-select" name="category" id="category">
+                        <option selected>work</option>
+                        <option value="study">study</option>
+                        <option value="play">play</option>
+                        <option value="food">food</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="priority">Priority</label>
+                        <select class="custom-select" name="priority" id="priority">
+                        <option selected>High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="startDate">Start Date</label>
+                        <input type="date" class="form-control" required name="startDate" id="startDate" aria-describedby="helpId" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="endDate">End Date</label>
+                        <input type="date" class="form-control" required name="endDate" id="endDate" aria-describedby="helpId" placeholder="">
+                    </div>
+
+                    <!-- button to submit form  -->
+                    <input type="button" onclick="submitForm()" class="btn btn-primary" id="submitButton" value="Submit"></input>
+
+                    <!-- button to update form -->
+                    <input type="button" onclick="updateForm()" class="btn btn-primary" style="display: none;" id="updateButton" value="update"></input>
+                </form>
+            </div>
+        </div>
+
+        <!-- col to display todo list -->
+        <div class="col-lg-8 mt-lg-2">
+            <div class="col-12 shadow p-2 m-lg-3 mt-lg-1 mt-sm-5 text-center text-uppercase text-shadow">to do list</div>
+            <div class="col-12 shadow p-5 m-lg-3 mt-sm-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-2">
+
+                                <!-- search button -->
+                                <div class="form-group">
+                                    <input type="button" class="btn btn-primary w-100" onclick="search()" value="search">
+                                </div>
+                            </div>
+
+                            <!-- button to display compleated task -->
+                            <div class="col-1 p-0 ">
+                                <div class="form-group">
+                                    <input type="button" class="btn btn-primary w-100 px-0 mt-1" onclick="stateCompleated()" value="Complete" style="font-size: 10px;">
+                                </div>
+                            </div>
+
+                            <!-- button to display incompleated task -->
+                            <div class="col-1 p-0 ml-2">
+                                <div class="form-group">
+                                    <input type="button" class="btn btn-primary w-100 px-0 mt-1" onclick="stateInCompleated()" value="incompleated" style="font-size: 9px;">
+                                </div>
+                            </div>
+
+                            <!-- search input box -->
+                            <div class="col-7">
+                                <div class="form-group">
+                                    <input type="text" class="form-control w-100 d-inline-block" oninput="search()" name="search" id="search">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- row to diaplay table -->
+                <div class="row">
+                    <div class="col-12">
+                        <table id="table" class="table" style="font-size: 15px;">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Category</th>
+                                    <th>Priority</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th class="text-center">Complete</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

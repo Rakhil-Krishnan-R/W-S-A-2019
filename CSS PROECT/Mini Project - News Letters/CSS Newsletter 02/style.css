@@ -1,0 +1,21 @@
+body{
+    background:gainsboro;
+}   
+.parent{
+    /* margin: 10px auto; */
+    text-align: center;
+    padding: 50px 165px;
+}
+section{
+    width: 100%;
+    background: white;
+}
+.section1{
+    border-top: 10px solid transparent;
+    border-image-source: url("./NewsletterTemplate002/border.PNG");
+    border-image-slice: 30;
+    padding-top: 30px;
+}
+.img100{
+    width: 100%;
+}
